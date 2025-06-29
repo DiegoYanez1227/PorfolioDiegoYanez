@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal - Diego Yáñez Márquez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#sobre-mi" data-i18n="nav.about">Sobre Mí</a></li>
+                <li><a href="#tecnologias" data-i18n="nav.stack">Tecnologías</a></li>
+                <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+                <li><a href="#certificaciones" data-i18n="nav.certifications">Certificaciones</a></li>
+                
+            </ul>
+            <div class="language-selector">
+                <button onclick="changeLanguage('es')" class="lang-btn active" data-lang="es">ES</button>
+                <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img  src="assets/images/profile2.jpeg" alt="Diego Yáñez Márquez">
+            </div>
+            <h1 data-i18n="hero.greeting">Hola, soy Diego Yáñez Márquez</h1>
+            <p data-i18n="hero.role">Desarrollador Web Full Stack</p>
+            <a href="#contacto" class="cta-button" data-i18n="hero.cta">Contáctame</a>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+        <h2 data-i18n="about.title">Sobre Mí</h2>
+        <div class="about-content"> 
+            <p data-i18n="about.description">Soy un apasionado desarrollador con un gran interés en el desarrollo web, proyectos de código abierto y aprendizaje continuo. Disfruto creando soluciones que marcan la diferencia y siempre estoy dispuesto a asumir nuevos desafíos.</p>
+        </div>
+    </section>
+    <section id="tecnologias" class="stack-section">
+        <h2 data-i18n="tecnology.title">Tecnologías</h2>
+        <div class="stack-grid">
+            <div class="stack-card">
+                <h3>Frontend</h3>
+                <ul>
+                    <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+                    <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+                    <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                    <li><i class="devicon-Knockout-original colored"></i> KnockoutJS</li>
+                    
+                </ul>
+            </div>
+            <div class="stack-card">
+                <h3>Backend</h3>
+                <ul>
+                    <li><i class="devicon-java-plain colored"></i> Java</li>
+                    <li><i class="devicon-hibernate-plain colored"></i> Hibernate</li>
+                    <li><i class="devicon-spring-plain colored"></i> Spring</li>
+                    <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                </ul>
+            </div>
+            <div class="stack-card">
+                <h3 data-i18n="tecnology.learning">Aprendiendo</h3>
+                <ul>
+                    <li><i class="devicon-python-plain colored"></i> Python</li>
+                    <li><i class="devicon-figma-plain colored"></i> Figma</li>
+                    <li><i class="devicon-flutter-plain colored"></i> Flutter</li>
+                </ul>
+            </div>
+            <div class="stack-card">
+                <h3 data-i18n="tecnology.tools">Herramientas</h3>
+                <ul>
+                    <li><i class="devicon-github-original colored"></i> GitHub</li>
+                    <li><i class="devicon-vscode-plain colored"></i> VSCode</li>
+                    <li><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA</li>
+                    <li><i class="devicon-eclipse-plain colored"></i> Eclipse</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="proyectos" class="projects">
+        <h2 data-i18n="projects.title">Mis Proyectos</h2>
+        <div class="project-grid">
+            <!--Proyecto 1 
+            <div class="project-card">
+                <img src="assets/coachpro-logo.svg" alt="CoachPro Logo">
+                <h3>CoachPro</h3>
+                <p data-i18n="projects.coachpro.description">Aplicación para Entrenadores enfocada al mundo del Entrenamiento en el Gimnasio.</p>
+                <a href="https://github.com/DiegoYanez1227/CoachPro" class="project-link" data-i18n="projects.view">Ver Proyecto</a>
+            </div> -->
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <img src="assets/images/ListifyLogo.png" alt="Listify">
+                <span class="badge-dev">En desarrollo</span>
+                <h3 data-i18n="projects.project2.title">Listify</h3>
+                <p data-i18n="projects.project2.description">Aplicación sencilla de organizacion diaria de un to-do List.</p>
+                <a href="#" class="project-link" data-i18n="projects.view">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section">
+        <h2 data-i18n="experience.title">Experiencia</h2>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <div class="experience-logo">
+                    <img src="assets/images/gqdalya.png" alt="Logo Empresa">
+                </div>
+                <h3 data-i18n="experience.fullstack.title">Desarrollador Web Full Stack(prácticas)</h3>
+                <p class="date" data-i18n="experience.fullstack.date">Marzo 2025 - Junio 2025</p>
+                <p data-i18n="experience.fullstack.description">Periodo de practicas en la empresa GQDalya desarrollando y manteniendo la aplicación web utilizando tecnologías como ASP.NET, Knockout.js, JQuery y C#.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="multidisciplinary" class="section">
+        <h2 data-i18n="multidisciplinary.title">Experiencia Multidisciplinar</h2>
+        <div class="multidisciplinary-content">
+            <div class="multidisciplinary-item">
+                <div class="icon-container">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 data-i18n="multidisciplinary.hospitality.title">Hostelería y Eventos</h3>
+                <p data-i18n="multidisciplinary.hospitality.description">Experiencia en diversos roles dentro del sector de la hostelería, incluyendo camarero, office y barra. Participación en montaje y desmontaje de eventos, desarrollando habilidades clave como:</p>
+                <ul class="skills-list">
+                    <li data-i18n="multidisciplinary.hospitality.skill1">Trabajo en equipo</li>
+                    <li data-i18n="multidisciplinary.hospitality.skill2">Atención al cliente</li>
+                    <li data-i18n="multidisciplinary.hospitality.skill3">Gestión del estrés</li>
+                    <li data-i18n="multidisciplinary.hospitality.skill4">Adaptabilidad</li>
+                </ul>
+            </div>
+
+            <div class="multidisciplinary-item">
+                <div class="icon-container">
+                    <i class="fas fa-swimming-pool"></i>
+                </div>
+                <h3 data-i18n="multidisciplinary.lifeguard.title">Socorrismo</h3>
+                <p data-i18n="multidisciplinary.lifeguard.description">Dos temporadas como socorrista, desarrollando competencias esenciales como:</p>
+                <ul class="skills-list">
+                    <li data-i18n="multidisciplinary.lifeguard.skill1">Responsabilidad</li>
+                    <li data-i18n="multidisciplinary.lifeguard.skill2">Vigilancia activa</li>
+                    <li data-i18n="multidisciplinary.lifeguard.skill3">Resolución de problemas</li>
+                    <li data-i18n="multidisciplinary.lifeguard.skill4">Toma de decisiones bajo presión</li>
+                </ul>
+            </div>
+
+            <div class="multidisciplinary-item">
+                <div class="icon-container">
+                    <i class="fas fa-globe-europe"></i>
+                </div>
+                <h3 data-i18n="multidisciplinary.international.title">Experiencia Internacional</h3>
+                <p data-i18n="multidisciplinary.international.description">Estancias prolongadas en Bélgica y Francia, lo que ha contribuido a:</p>
+                <ul class="skills-list">
+                    <li data-i18n="multidisciplinary.international.skill1">Adaptación multicultural</li>
+                    <li data-i18n="multidisciplinary.international.skill2">Comunicación multilingüe</li>
+                    <li data-i18n="multidisciplinary.international.skill3">Flexibilidad</li>
+                    <li data-i18n="multidisciplinary.international.skill4">Mentalidad global</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-summary">
+            <h3 data-i18n="multidisciplinary.summary.title">Habilidades Transferibles</h3>
+            <p data-i18n="multidisciplinary.summary.description">Esta diversidad de experiencias ha enriquecido mi perfil profesional, aportando una perspectiva única y "Soft Skills" que complementan mi desarrollo técnico. La capacidad de adaptación, la resolución de problemas y el trabajo en equipo son competencias que aplico diariamente en mi carrera como desarrollador.</p>
+        </div>
+    </section>
+
+    <section id="certificaciones" class="certifications">
+        <h2 data-i18n="certifications.title">Certificaciones y Cursos</h2>
+        <div class="certifications-grid">
+            
+
+            <div class="certification-card">
+                <div class="certification-header">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3 data-i18n="certifications.java.title">Desarrollo de Aplicaciones Multiplataforma</h3>
+                        <p class="cert-institution" data-i18n="certifications.java.institution">IES Lazaro Cardenas</p>
+                        <p class="cert-date" data-i18n="certifications.java.date">2023 - 2025</p>
+                    </div>
+                </div>
+                <div class="certification-body">
+                    <p data-i18n="certifications.java.description">Formación técnica en desarrollo de software multiplataforma, con énfasis en Java y tecnologías web.</p>
+                    <div class="cert-skills">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Hibernate</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <div class="certification-footer">
+                    <a href="#" class="cert-link" data-i18n="certifications.view">Ver Certificado</a>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2 data-i18n="contact.title">Contacto</h2>
+            <div class="social-links">
+                <a href="https://github.com/DiegoYanez1227" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:diegoyan0260@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/diego-yañez-marquez-b26541232/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="assets/CV-DiegoYanez.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diego Yáñez Márquez. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
