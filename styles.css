@@ -848,12 +848,14 @@ footer {
     /* Tecnologías */
     .stack-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
         gap: 1.5rem;
     }
     
     .stack-card {
         width: 100%;
         margin: 0 auto;
+        padding: 1.5rem;
     }
     
     /* Experiencia */
@@ -1190,7 +1192,8 @@ footer {
     }
     
     .stack-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
         gap: 1rem;
     }
     
@@ -1223,7 +1226,7 @@ footer {
 
 .stack-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas por defecto */
     grid-template-rows: repeat(2, auto);   /* 2 filas */
     gap: 1rem;
     max-width: 1000px;
